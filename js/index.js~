@@ -1,4 +1,4 @@
-var ref = new Firebase("https://teamemerobocup.firebaseio.com/");
+var ref = new Firebase("https://radiant-torch-3037.firebaseio.com/");
 
 // Thanks to https://gist.github.com/hurjas/2660489#file-timestamp-js-L26
 function timeStamp() {
