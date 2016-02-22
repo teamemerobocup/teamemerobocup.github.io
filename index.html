@@ -17,14 +17,22 @@
     <body >
 
 <div >
- <nav>
-    <div class="nav-wrapper" style="background-color: #379adc;">
-      <a href="#" class="brand-logo" style=" padding-left: 30px;"><img width="50" src="http://www2.psd100.com/icon/2013/09/1001/Robot-Icon-0910135859.png"></img>Robocup Team EME</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+ 
+   <nav style="background-color: #3498db">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo" style="padding-left: 20px"><h5>Robocup@Home Team EME</h5></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#intro">Introduction</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#media">Media</a></li>
         <li><a href="#team">Team</a></li>
-         <li><a href="http://www.robocupathome.org/">Robocup</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#gallery">Gallery</a></li>
       </ul>
     </div>
   </nav>
@@ -37,7 +45,7 @@
    <div class="container" style="padding-top: 20px"> 
     <blockquote>
      
-   <h3>Introduction</h3>
+   <h3 id="intro">Introduction</h3>
     </blockquote>
    <p>
   Team EME is from National University of Sciences and Technology, department of Mechatronics Engineering. The team comprises of 6 students, aimed at designing a robot skilled to accomplish the tasks of RoboCup@Home League 2016.</p>
@@ -54,7 +62,7 @@
       <div style="padding-top: 20px" class="row">
 
     
- <h3 style="padding-bottom: 30px"><blockquote>Features </blockquote></h3>
+ <h3 style="padding-bottom: 30px" id="features"><blockquote>Features </blockquote></h3>
 
 
         <div class="col s12 m4" >
@@ -151,7 +159,7 @@
       </div>
         <div class="container">
 <blockquote>
-<h3 >Team</h3>
+<h3 id="team" >Team</h3>
  </blockquote>
 <div class="row"></div>
   <div class="col m4 s12"> 
@@ -196,7 +204,7 @@
 </div>
 
 
-<h3 class="container" style="padding-bottom: 25px"> <blockquote>Gallery</blockquote></h3>
+<h3 id="gallery" class="container" style="padding-bottom: 25px"> <blockquote>Gallery</blockquote></h3>
  
 <div class="row container"><div class="col m3 s12">
 <img class="materialboxed" height="250" src="http://s19.postimg.org/is8tgkzwj/12722188_1267113659970702_703619297_o.jpg">
@@ -208,26 +216,39 @@
 <img class="materialboxed" height="250"  width ="400"src="http://s19.postimg.org/4n82bvx6r/20160219_125143.jpg"></div>
 </div>
 </div>
- <div class="card">
+ <div class="card ">
           
             <div class="card-content">
            
-    <div class="comment-box">
+    <div class="comment-box container">
       <div class="comment-form">
-        <div class="header">Add Your Comment</div>
+        <div class="header"><h5>Please leave a comment</h5></div>
         <form action="#" onsubmit="event.preventDefault(); postComment()">
           <div> 
             <input type="text" id="name" placeholder="Name"/>
           </div>
           <div>
-            <textarea id="comment" rows="3" cols="30" placeholder="Comment"></textarea>
+           
+              <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="comment" class="materialize-textarea" placeholder="Comment"></textarea>
+        
+        </div>
+      </div>
+    </form>
+  </div>
           </div>
-          <button type="submit">COMMENT</button>
+        
+          <a class="btn" onclick="Materialize.toast('Thankyou :)', 4000)" type="submit" class="waves-effect waves-light btn">Comment</a>
         </form>  
       </div>
       <div>
-        <h5 class="header">Comments</h5>
+       
         <div id="comments" style="font-size: 20px"></div>
+
       </div>
      
     </div>
@@ -269,5 +290,6 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">  $(".button-collapse").sideNav();</script>
     </body>
   </html>
